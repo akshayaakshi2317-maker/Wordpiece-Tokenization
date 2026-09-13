@@ -1,0 +1,118 @@
+========== WORD FREQUENCIES ==========
+hug : 2
+hugs : 1
+pug : 2
+pugs : 1
+mug : 1
+mugs : 1
+rug : 1
+rugs : 1
+
+========== INITIAL SPLITS ==========
+hug -> ['h', '##u', '##g']
+hugs -> ['h', '##u', '##g', '##s']
+pug -> ['p', '##u', '##g']
+pugs -> ['p', '##u', '##g', '##s']
+mug -> ['m', '##u', '##g']
+mugs -> ['m', '##u', '##g', '##s']
+rug -> ['r', '##u', '##g']
+rugs -> ['r', '##u', '##g', '##s']
+
+========== INITIAL VOCABULARY ==========
+##g
+##s
+##u
+h
+m
+p
+r
+
+========== WORDPIECE TRAINING ==========
+
+Merge 1
+Best Pair : ('h', '##u')
+Pair Frequency : 3
+Score : 0.1
+New Token : hu
+
+Merge 2
+Best Pair : ('p', '##u')
+Pair Frequency : 3
+Score : 0.142857
+New Token : pu
+
+Merge 3
+Best Pair : ('m', '##u')
+Pair Frequency : 2
+Score : 0.25
+New Token : mu
+
+Merge 4
+Best Pair : ('r', '##u')
+Pair Frequency : 2
+Score : 0.5
+New Token : ru
+
+Merge 5
+Best Pair : ('hu', '##g')
+Pair Frequency : 3
+Score : 0.1
+New Token : hug
+
+Merge 6
+Best Pair : ('pu', '##g')
+Pair Frequency : 3
+Score : 0.142857
+New Token : pug
+
+========== FINAL WORD SPLITS ==========
+hug -> ['hug']
+hugs -> ['hug', '##s']
+pug -> ['pug']
+pugs -> ['pug', '##s']
+mug -> ['mu', '##g']
+mugs -> ['mu', '##g', '##s']
+rug -> ['ru', '##g']
+rugs -> ['ru', '##g', '##s']
+
+========== FINAL VOCABULARY ==========
+##g
+##s
+##u
+h
+hu
+hug
+m
+mu
+p
+pu
+pug
+r
+ru
+
+Vocabulary Size : 13
+
+========== TEST TOKENIZATION ==========
+Test Word : mugs
+Tokens : ['mu', '##g', '##s']
+
+========== TOKEN ID MAPPING ==========
+##g : 0
+##s : 1
+##u : 2
+[UNK] : 3
+h : 4
+hu : 5
+hug : 6
+m : 7
+mu : 8
+p : 9
+pu : 10
+pug : 11
+r : 12
+ru : 13
+
+Input Tokens : ['mu', '##g', '##s']
+Token IDs : [8, 0, 1]
+
+========== PROGRAM COMPLETED ==========
